@@ -30,6 +30,23 @@ textarea{
   border-radius: 15px;
 }
 
+section h1{
+  display: inline-block;
+  font-size: 22px;
+  padding: 25px;;
+  margin:0;
+  border: #000000 3px solid;
+  width: 125px;
+  height: 81px;
+}
+
+section p {
+  display: inline;
+  border: #000000 solid;
+  height: 81px;
+  padding: 2px;
+}
+
 .row {
   white-space: pre-wrap;
   height: 80px;
