@@ -45,8 +45,13 @@ section p {
   border: #000000 solid;
   height: 81px;
   padding: 2px;
+  width: 550px;
 }
 
+.button {
+  color: red;
+  height: 80px;
+}
 .row {
   white-space: pre-wrap;
   height: 80px;
