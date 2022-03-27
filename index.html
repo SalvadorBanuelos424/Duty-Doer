@@ -19,81 +19,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Assets/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Duty Doer</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <script type = "text/JavaScript" src="./Assets/script.js"></script>  
+      <div style = "font-size:25px" id = "todaysdate"></div>
+      <script type = "text/JavaScript">
+         var a = moment().format('dddd MMM Do YYYY').toString();
+         document.getElementById("todaysdate").innerHTML = a;
+      </script>
     </header>
     
     <section class="container">
-      <div id="8" class="row">
-        <h1 class="col-">8:00AM</h1>
-        <p class="col-lg">8</p>
-        <button type="submit" name="formBtn" class="button8">Save</button>
-      </div>
       <div id="9" class="row">
-        <h1 class="col-">9:00AM</h1>
-        <p class="col-lg">9</p>
-        <button type="submit" name="formBtn" class="button">Save</button>      
+        <h1 class="col-md-2">9:00AM</h1>
+        <textarea name="area9" id="area9" class="col-md-8"> </textarea>
+        <button  name="button9" id="button9" class="button col-md-2">Save</button>
       </div>
       <div id="10" class="row">
-        <h1 class="col-">10:00AM</h1>
-        <p class="col-lg">10</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">10:00AM</h1>
+        <textarea name="area10" id="area10" class="col-md-8"></textarea>
+        <button name="button10" id="button10" class="button col-md-2">Save</button>
       </div>
       <div id="11" class="row">
-        <h1 class="col-">11:00AM</h1>
-        <p class="col-lg">11</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">11:00AM</h1>
+        <textarea name="area11" id="area11" class="col-md-8"></textarea>
+        <button name="button11" id="button11" class="button col-md-2">Save</button>
       </div>
       <div id="12" class="row">
-        <h1 class="col-">12:00PM</h1>
-        <p class="col-lg">12</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
-      </div>
+        <h1 class="col-md-2">12:00PM</h1>
+        <textarea name="area12" id="area12" class="col-md-8"></textarea>
+        <button name="button12" id="button12" class="button col-md-2">Save</button>
+      </div> 
       <div id="1" class="row">
-        <h1 class="col-">1:00PM</h1>
-        <p class="col-lg">1</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">1:00PM</h1>
+        <textarea name="area1" id="area1" class="col-md-8"></textarea>
+        <button name="button1" id="button1" class="button col-md-2">Save</button>
       </div>
       <div id="2" class="row">
-        <h1 class="col-">2:00PM</h1>
-        <p class="col-lg">2</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">2:00PM</h1>
+        <textarea name="area2" id="area2" class="col-md-8"></textarea>
+        <button name="button2" id="button2" class="button col-md-2">Save</button>
       </div>
       <div id="3" class="row">
-        <h1 class="col-">3:00PM</h1>
-        <p class="col-lg">3</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">3:00PM</h1>
+        <textarea name="area3" id="area3" class="col-md-8"></textarea>
+        <button name="button3" id="button3" class="button col-md-2">Save</button>
       </div>
       <div id="4" class="row">
-        <h1 class="col-">4:00PM</h1>
-        <p class="col-lg">4</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">4:00PM</h1>
+        <textarea name="area4" id="area4" class="col-md-8"></textarea>
+        <button name="button4" id="button4" class="button col-md-2">Save</button>
       </div>
       <div id="5" class="row">
-        <h1 class="col-">5:00PM</h1>
-        <p class="col-lg">5</p>
-        <button type="submit" name="formBtn" class="button">Save</button>
+        <h1 class="col-md-2">5:00PM</h1>
+        <textarea name="area5" id="area5" class="col-md-8"></textarea>
+        <button name="button5" id="button5" class="button col-md-2">Save</button>
       </div>
       <script src="./Assets/script0.js"></script>
-      <script src="./Assets/script.js">
-        <p>moment().format('MMMM Do YYYY');</p>
-      </script>  
     
       <script>
         console.log(moment().format('MMMM Do YYYY'));
       </script>
     </section>
 
-
-    <script>
-      moment().format();
-    </script>
 
 
 
