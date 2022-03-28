@@ -15,11 +15,10 @@ Keep your plans organized, it's fast and easy, give it a try!
 * JavaScript
 
 ## Website
-* https://salvadorbanuelos424.github.io/Horiseon/
+* https://salvadorbanuelos424.github.io/Duty-Doer/
 
 ## GitHub URL
-* https://github.com/SalvadorBanuelos424/Random-Password-Generator.git
-
+* https://github.com/SalvadorBanuelos424/Duty-Doer
 ## Contributing
 Made with ❤️ by Salvador Banuelos
 
