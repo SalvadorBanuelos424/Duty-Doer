@@ -4,42 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./Assets/style.css" />
-    <title>Duty Doer</title>
-  </head>
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-      <script type = "text/JavaScript" src="./Assets/script.js"></script>  
-      <div style = "font-size:25px" id = "todaysdate"></div>
-      <script type = "text/JavaScript">
-         var a = moment().format('dddd MMM Do YYYY').toString();
-         document.getElementById("todaysdate").innerHTML = a;
-      </script>
-    </header>
     
+    <!--Link attachment to 3rd-party API bootstrap and style.css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Duty Doer</title>
+  </head>  
+  <body>
+   <header class="jumbotron">
+      <h1 class="display-3"><span style='font-size:100px;'>&#128198;</span>Duty-Doer<span style='font-size:100px;'>&#9997;</span></h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+   
+      <!--Link attachment to 3rd-party API Moment.js, through script.js-->
+      <script type = "text/JavaScript" src="./Assets/js/script.js"></script>  
+      <div style = "font-size:25px" id = "todaysdate"></div>
+      <script type = "text/JavaScript"> var a = moment().format('dddd MMM Do YYYY').toString(); document.getElementById("todaysdate").innerHTML = a; </script>
+    </header>
     <section class="container">
+      
+      <!--Bootstrap creates flexible grids that adjust to screen sizes by using rows & offsetting columns-->
       <div id="9" class="row">
         <h1 class="col-md-2">9:00AM</h1>
+        
+        <!--textarea allows users to type itinerary for corresponding work hour-->
         <textarea name="area9" id="area9" class="col-md-8"> </textarea>
+        
+        <!--Clicking the 'save' button will call a JavaScript function; storing text from textarea into the web browser localstorage--> 
         <button  name="button9" id="button9" class="button col-md-2">Save</button>
       </div>
+      
+      <!--The process will replicate for each work-hour(div)-->  
       <div id="10" class="row">
         <h1 class="col-md-2">10:00AM</h1>
         <textarea name="area10" id="area10" class="col-md-8"></textarea>
@@ -55,46 +49,34 @@
         <textarea name="area12" id="area12" class="col-md-8"></textarea>
         <button name="button12" id="button12" class="button col-md-2">Save</button>
       </div> 
-      <div id="1" class="row">
+      <div id="13" class="row">
         <h1 class="col-md-2">1:00PM</h1>
         <textarea name="area1" id="area1" class="col-md-8"></textarea>
         <button name="button1" id="button1" class="button col-md-2">Save</button>
       </div>
-      <div id="2" class="row">
+      <div id="14" class="row">
         <h1 class="col-md-2">2:00PM</h1>
         <textarea name="area2" id="area2" class="col-md-8"></textarea>
         <button name="button2" id="button2" class="button col-md-2">Save</button>
       </div>
-      <div id="3" class="row">
+      <div id="15" class="row">
         <h1 class="col-md-2">3:00PM</h1>
         <textarea name="area3" id="area3" class="col-md-8"></textarea>
         <button name="button3" id="button3" class="button col-md-2">Save</button>
       </div>
-      <div id="4" class="row">
+      <div id="16" class="row">
         <h1 class="col-md-2">4:00PM</h1>
         <textarea name="area4" id="area4" class="col-md-8"></textarea>
         <button name="button4" id="button4" class="button col-md-2">Save</button>
       </div>
-      <div id="5" class="row">
+      <div id="17" class="row">
         <h1 class="col-md-2">5:00PM</h1>
         <textarea name="area5" id="area5" class="col-md-8"></textarea>
         <button name="button5" id="button5" class="button col-md-2">Save</button>
       </div>
-      <script src="./Assets/script0.js"></script>
-    
-      <script>
-        console.log(moment().format('MMMM Do YYYY'));
-      </script>
+
+      <!--script0.js is placed at the bottom of an HTML page in order not to hinder HTML loading-->
+      <script src="./Assets/js/script0.js"></script>
     </section>
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-      
-  
   </body>
 </html>
